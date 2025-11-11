@@ -67,7 +67,7 @@ Then check your contract and transactions on [https://sepolia.etherscan.io](http
 - **IDE:** Remix (online)  
 - **License:** MIT  
 - **Author:** Catarina  
-- **Bootcamp:** Solidity Blockchain Developer (Beograd 2024)
+- **Bootcamp:** Solidity Blockchain Developer (Beograd 2025)
 
 ---
 
