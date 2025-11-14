@@ -1,22 +1,26 @@
-# Solidity To-Do List Contract
+# TodoList Solidity Contract
 
-Este é um smart contract simples em Solidity que simula uma lista de tarefas (to-do list). Ele demonstra conceitos fundamentais como variáveis de estado, funções, modificadores, validações com `require`, eventos e tratamento de erros.
+Este repositório contém um smart contract simples em Solidity para uma lista de tarefas (to-do list), desenvolvido como parte de um bootcamp.
+
+## Descrição
+O contrato permite adicionar tarefas, visualizá-las e marcá-las como concluídas, demonstrando conceitos como variáveis de estado, funções, eventos e validações.
 
 ## Funcionalidades
-- Adicionar tarefas com descrição.
-- Marcar tarefas como concluídas usando o ID.
-- Visualizar todas as tarefas.
+- Adicionar tarefa com descrição.
+- Listar todas as tarefas.
+- Marcar tarefa como concluída usando ID.
 
 ## Como Usar
-1. Compile e implante no Remix IDE.
-2. Interaja com as funções: `addTask`, `completeTask`, `getTasks`.
-3. Observe eventos como `TaskAdded` e `TaskCompleted`.
+1. Abra no Remix IDE.
+2. Compile e deploy na Sepolia Testnet.
+3. Interaja com `addTask`, `getTasks` e `completeTask`.
 
-## Arquivos
-- `TodoList.sol`: Código do contrato.
+## Requisitos da Tarefa
+- Pelo menos uma variável de estado, função public/external, require, evento e emit.
+- Testado no Remix com screenshots.
 
-## Testes
-- Implantado na Sepolia Testnet.
-- Exemplos de interações: Adicione "Comprar leite" e marque como concluída.
+## Link para Documentação
+Ver PDF completo: [Insira link do seu PDF hospedado, ex: Google Drive].
 
-Link para o PDF da documentação: [Insira link se hospedar em outro lugar, ex: Google Drive].
+## Licença
+MIT License.
