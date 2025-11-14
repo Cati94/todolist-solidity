@@ -1,89 +1,22 @@
-# 📝 To-Do List Smart Contract
+# Solidity To-Do List Contract
 
-A simple decentralized application (dApp) built with **Solidity**, developed as part of the Blockchain Bootcamp assignment.  
-This smart contract allows users to add tasks and mark them as completed, demonstrating core Solidity concepts such as **state variables, functions, events, and validation**.
+Este é um smart contract simples em Solidity que simula uma lista de tarefas (to-do list). Ele demonstra conceitos fundamentais como variáveis de estado, funções, modificadores, validações com `require`, eventos e tratamento de erros.
 
----
+## Funcionalidades
+- Adicionar tarefas com descrição.
+- Marcar tarefas como concluídas usando o ID.
+- Visualizar todas as tarefas.
 
-## 🚀 Features
-- Add new tasks with a short description  
-- Mark tasks as completed  
-- View all tasks stored on the blockchain  
-- Events emitted for every action (`TaskAdded`, `TaskCompleted`)  
-- Input validation using `require()`  
+## Como Usar
+1. Compile e implante no Remix IDE.
+2. Interaja com as funções: `addTask`, `completeTask`, `getTasks`.
+3. Observe eventos como `TaskAdded` e `TaskCompleted`.
 
----
+## Arquivos
+- `TodoList.sol`: Código do contrato.
 
-## 🧠 Smart Contract Overview
+## Testes
+- Implantado na Sepolia Testnet.
+- Exemplos de interações: Adicione "Comprar leite" e marque como concluída.
 
-### Solidity Code
-See [ToDoList.sol](./ToDoList.sol) for full implementation.
-
----
-
-## ⚙️ Functions
-
-| Function | Modifier | Description |
-|-----------|-----------|-------------|
-| `addTask(string memory _description)` | `public` | Adds a new task to the list. Requires a non-empty description. |
-| `completeTask(uint _taskId)` | `public` | Marks a specific task as completed. |
-| `getTask(uint _taskId)` | `external view` | Returns a task’s description and completion status. |
-| `getTotalTasks()` | `public view` | Returns the total number of tasks. |
-
----
-
-## 📡 Events
-
-| Event | Description |
-|--------|-------------|
-| `TaskAdded(uint taskId, string description)` | Triggered when a new task is added. |
-| `TaskCompleted(uint taskId)` | Triggered when a task is marked as completed. |
-
----
-
-## 🧪 Testing (Remix IDE)
-
-1. Go to [Remix IDE](https://remix.ethereum.org)  
-2. Create a new file `ToDoList.sol` and paste the code above.  
-3. Compile with Solidity ^0.8.0.  
-4. Deploy the contract in **Remix VM (London)** or on **Sepolia Testnet**.  
-5. Interact with functions:
-   - `addTask("Estudar Solidity")`  
-   - `getTotalTasks()` → returns total count  
-   - `getTask(0)` → shows description and completion status  
-   - `completeTask(0)` → marks as completed and emits `TaskCompleted` event
-
----
-
-## 🪙 Deployment (optional)
-
-You can deploy to **Sepolia Testnet** using MetaMask and get free test ETH from a [faucet](https://sepoliafaucet.com/).  
-Then check your contract and transactions on [https://sepolia.etherscan.io](https://sepolia.etherscan.io).
-
----
-
-## 📚 Project Details
-- **Language:** Solidity ^0.8.0  
-- **IDE:** Remix (online)  
-- **License:** MIT  
-- **Author:** Catarina  
-- **Bootcamp:** Solidity Blockchain Developer (Beograd 2025)
-
----
-
-## 🖇️ Repository Structure
-```
-ToDoList/
-├── ToDoList.sol
-├── README.md
-└── screenshots/
-    ├── compile.png
-    ├── deploy.png
-    ├── functions.png
-    └── events.png
-```
-
----
-
-## 🧾 License
-This project is licensed under the MIT License — feel free to use and modify it for learning purposes.
+Link para o PDF da documentação: [Insira link se hospedar em outro lugar, ex: Google Drive].
