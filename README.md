@@ -19,6 +19,36 @@ O contrato permite adicionar tarefas, visualizá-las e marcá-las como concluíd
 - Pelo menos uma variável de estado, função public/external, require, evento e emit.
 - Testado no Remix com screenshots.
 
+Estrutura da To-Do List (Smart Contract)
+
++-------------------+       +-------------------+
+|   Variável de     |       |     Funções       |
+|    Estado         |       |                   |
+| - Task[] tasks    |       | - getTasks()      |
+|   (array de       |       |   (public, view)  |
+|    structs)       |       | - addTask()       |
+|                   |       |   (external,      |
+| - uint nextId     |       |    payable)       |
++-------------------+       | - completeTask()  |
+                            |   (external)      |
+                            +-------------------+
+                                     |
+                                     | Validações & Eventos
+                                     v
++-------------------+       +-------------------+
+|   Validações      |       |     Eventos       |
+| (require())       |       |                   |
+| - Descrição não   |       | - TaskAdded       |
+|   vazia           |       |   (id, desc)      |
+| - ID existe       |       | - TaskCompleted  |
+| - Não concluída   |       |   (id)           |
++-------------------+       +-------------------+
+
+Fluxo de Uso:
+1. Usuário chama addTask("Comprar leite") → Adiciona tarefa, emite TaskAdded.
+2. Usuário chama getTasks() → Retorna lista.
+3. Usuário chama completeTask(1) → Marca como concluída, emite TaskCompleted.
+
 ## Link para Documentação
 Ver PDF completo: [Insira link do seu PDF hospedado, ex: Google Drive].
 
