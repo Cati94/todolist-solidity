@@ -2,6 +2,8 @@
 
 Este repositório contém um smart contract simples em Solidity para uma lista de tarefas (to-do list), desenvolvido como parte de um bootcamp.
 
+![To do list ](https://github.com/Cati94/todolist-solidity/blob/main/Blockchain.png)
+
 ## Descrição
 O contrato permite adicionar tarefas, visualizá-las e marcá-las como concluídas, demonstrando conceitos como variáveis de estado, funções, eventos e validações.
 
